@@ -28,8 +28,6 @@ def limpar_dados(df: pd.DataFrame) -> pd.DataFrame:
     - trata valores ausentes simples (se houver).
     """
     df = df.drop_duplicates().copy()
-    # No dataset Adult original, valores desconhecidos costumam aparecer como '?'.
-    # Aqui poderíamos fazer tratamentos adicionais se necessário.
     return df
 
 
