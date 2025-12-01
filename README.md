@@ -21,6 +21,8 @@ Este escopo atende à **Parte 1** de Ciência de Dados (fundação do projeto) e
 
 ### Pipeline de dados (resumo)
 
+![Pipeline de Dados](pipeline.jpeg)
+
 1. **Ingestão**  
    - Leitura do arquivo `adult.csv` a partir da pasta `data/` usando `pandas`.
 2. **Limpeza e transformação**  
@@ -101,6 +103,7 @@ Esta etapa atende à **Parte 4** de Ciência de Dados e ao item **d)** de Análi
 
 - `README.md` — relatório principal do projeto, conectando requisitos das duas disciplinas.
 - `README.negocio.md` — texto detalhado de domínio, pergunta de negócio e objetivo.
+- `pipeline.jpeg` — diagrama visual do pipeline de dados e machine learning.
 - `data/`
   - `adult.csv` — dataset utilizado no projeto.
 - `notebooks/`
