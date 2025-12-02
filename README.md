@@ -1,5 +1,9 @@
 # Projeto de Ciência de Dados e Análise Preditiva - Predição de Renda (> US$50K)
 
+## Alunos:
+- Gustavo Dias
+- Gustavo Willian Larsen
+
 Repositório do trabalho final das disciplinas **Ciência de Dados** e **Análise Preditiva**, utilizando o dataset Adult ("Adult Income") para construir, comparar e disponibilizar um modelo de classificação que prevê se a renda anual de um indivíduo é maior que US$50.000.
 
 ---
