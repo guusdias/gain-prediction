@@ -25,21 +25,27 @@ Este escopo atende à **Parte 1** de Ciência de Dados (fundação do projeto) e
 
 1. **Ingestão**  
    - Leitura do arquivo `adult.csv` a partir da pasta `data/` usando `pandas`.
-2. **Limpeza e transformação**  
+2. **Validação de Dados**  
    - Remoção de duplicatas.  
    - Tratamento simples de valores desconhecidos (como `?`, se necessário).  
    - Garantia de consistência de tipos e nomes de colunas.
-3. **Análise Exploratória (EDA)**  
-   - Exploração de distribuições numéricas (`age`, `hours-per-week`, `capital-gain`, `capital-loss`, `educational-num`).  
-   - Análise de frequências de variáveis categóricas (`workclass`, `education`, `occupation`, etc.).  
-   - Investigação da relação entre `income` e variáveis como `education` e `hours-per-week`.  
-   - Identificação de desbalanceamento da variável alvo (`income`).
-4. **Preparação para modelagem**  
+   - Exploração de distribuições numéricas (`age`, `hours-per-week`, `capital-gain`, `capital-loss`, `educational-num`).
+   - Análise de frequências de variáveis categóricas (`workclass`, `education`, `occupation`, etc.).
+   - Investigação da relação entre `income` e variáveis como `education` e `hours-per-week`.
+3. **Transformação e Criação de Features**  
    - Definição de `X` (features) e `y` (alvo binário: 0 = <=50K, 1 = >50K).  
    - Separação em treino e teste com `train_test_split` (20% teste, estratificado em `income`).  
    - Pré-processamento com `ColumnTransformer`:
      - `StandardScaler` para colunas numéricas.
      - `OneHotEncoder` para colunas categóricas.
+4. **Modelo de Treino**
+   - Criação de um pipeline de modelagem que integra pré-processamento e algoritmos de Regressão Logística, Árvore de Decisão e Random Forest).
+   - Ajuste dos parâmetros do modelo usando apenas os dados de treino.
+5. **Avaliação do Modelo**
+   - Avaliação do desempenho do modelo no conjunto de teste utilizando métricas como acurácia, precisão e recall.
+   - Inspeção da matriz de confusão para verificar padrões de erros.
+6. **Deploy do Modelo**
+   - Exportação do modelo treinado usando pickle (.pkl).
 
 Este pipeline atende à **Parte 2** de Ciência de Dados (jornada dos dados) e ao item **b)** de Análise Preditiva (pipeline a partir do repositório).
 
