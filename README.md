@@ -2,7 +2,7 @@
 
 ## Alunos:
 - Gustavo Dias
-- Gustavo Willian Larsen
+- Gustavo William Larsen
 
 Repositório do trabalho final das disciplinas **Ciência de Dados** e **Análise Preditiva**, utilizando o dataset Adult ("Adult Income") para construir, comparar e disponibilizar um modelo de classificação que prevê se a renda anual de um indivíduo é maior que US$50.000.
 
